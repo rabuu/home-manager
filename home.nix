@@ -122,13 +122,14 @@
 
     prefix = "M-Space";
     shell = "${pkgs.fish}/bin/fish";
-    terminal = "screen-256color";
     baseIndex = 1;
     escapeTime = 10;
     clock24 = true;
     mouse = true;
 
     extraConfig = ''
+      set-option -ga terminal-overrides ",xterm-256color:Tc"
+
       set-option -g status-right ""
       set-option -g status-style bg='#343434'
 
