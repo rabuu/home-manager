@@ -12,6 +12,7 @@
     fd
     ripgrep
     wl-clipboard
+    libreoffice
   ];
 
   home.sessionVariables = {
