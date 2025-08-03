@@ -13,6 +13,12 @@
     ripgrep
     wl-clipboard
     libreoffice
+    discord
+    signal-desktop
+    telegram-desktop
+    fastfetch
+
+    kdePackages.krohnkite
   ];
 
   xdg = {

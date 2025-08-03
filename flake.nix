@@ -18,11 +18,13 @@
     inputs@{ nixpkgs, home-manager, plasma-manager, ... }:
     let
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
     in
     {
       homeConfigurations."rabuu" = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
+        pkgs = import nixpkgs {
+	  inherit system;
+	  config.allowUnfree = true;
+	};
 
         modules = [
 	  inputs.plasma-manager.homeManagerModules.plasma-manager
