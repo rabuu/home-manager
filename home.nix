@@ -91,7 +91,7 @@
 
       directory = {
         style = "bold blue";
-        format = ''\[[$path]($style)\] [$read_only]($read_only_style)'';
+        format = ''\[[$path]($style)\][$read_only]($read_only_style)'';
         read_only = "[ro]";
         repo_root_style = "bold cyan";
         repo_root_format = ''\[[$before_root_path]($style)[$repo_root]($style)[$path]($style)\][$read_only]($read_only_style)'';
