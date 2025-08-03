@@ -78,6 +78,38 @@
     '';
   };
 
+  programs.starship = {
+    enable = true;
+
+    settings = {
+      format = "$username$hostname$directory$character";
+      right_format = "$git_branch$git_commit$git_state$git_metrics$git_status$nix_shell";
+
+      cmd_duration.disabled = true;
+      line_break.disabled = true;
+
+      git_metrics.disabled = false;
+
+      directory = {
+        style = "bold blue";
+        format = ''\[[$path]($style)\] [$read_only]($read_only_style)'';
+        read_only = "[ro]";
+        repo_root_style = "bold cyan";
+        repo_root_format = ''\[[$before_root_path]($style)[$repo_root]($style)[$path]($style)\][$read_only]($read_only_style)'';
+      };
+
+      character = {
+        success_symbol = ''[\$](bold green)'';
+        error_symbol = ''[\$](bold red)'';
+      };
+
+      nix_shell = {
+        format = ''\[[$symbol:$name \($state\)]($style)\]'';
+        symbol = "nix";
+      };
+    };
+  };
+
   programs.git = {
     enable = true;
 
