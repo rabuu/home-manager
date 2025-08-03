@@ -8,7 +8,6 @@
 
   home.packages = with pkgs; [
     neovim
-    bat
     fd
     ripgrep
     wl-clipboard
@@ -195,6 +194,14 @@
   programs.browserpass = {
     enable = true;
     browsers = [ "firefox" "chromium" ];
+  };
+
+  programs.bat = {
+    enable = true;
+
+    config = {
+      style = "plain,header,grid";
+    };
   };
 
   #
