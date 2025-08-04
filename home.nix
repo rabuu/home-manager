@@ -221,7 +221,28 @@
     defaultProfile = "main";
 
     profiles = {
-      main = { };
+      main = {
+        colorScheme = "GruvboxBlack";
+
+        extraConfig = {
+          General = {
+            DimWhenInactive = true;
+            ShowTerminalSizeHint = false;
+            TerminalMargin = 3;
+          };
+          Appearance = {
+            DimmValue = 50;
+          };
+          Scrolling = {
+            HighlightScrolledLines = false;
+            ScrollBarPosition = 2; # 2 -> hidden
+          };
+        };
+      };
+    };
+
+    customColorSchemes = {
+      GruvboxBlack = ./konsole/GruvboxBlack.colorscheme;
     };
   };
 
