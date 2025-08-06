@@ -227,10 +227,13 @@
 
     shortcuts = {
       "services/org.kde.konsole.desktop" = {
-        _launch = "Meta+Shift+Enter";
+        _launch = "Meta+Shift+Return";
       };
       "services/firefox-esr.desktop" = {
         _launch = "Meta+Shift+B";
+      };
+      "services/org.kde.krunner.desktop" = {
+        _launch = "Search";
       };
     };
 
