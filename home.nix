@@ -219,6 +219,10 @@
   programs.plasma = {
     enable = true;
 
+    workspace = {
+      lookAndFeel = "org.kde.breezetwilight.desktop";
+    };
+
     input.keyboard.layouts = [
       {
         layout = "us";
