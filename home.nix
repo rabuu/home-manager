@@ -212,6 +212,11 @@
     };
   };
 
+  xdg.configFile."nvim" = {
+    source = ./nvim;
+    recursive = true;
+  };
+
   #
   # KDE Plasma
   #

@@ -1,0 +1,1 @@
+/home/rabuu/src/peanoforte/editor/vim/syntax/peanoforte.vim

@@ -1,0 +1,1 @@
+/home/rabuu/src/compli/editor/vim/syntax/compli.vim

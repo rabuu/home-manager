@@ -1,0 +1,1 @@
+/home/rabuu/src/glotta/editor/vim/syntax/glotta.vim
