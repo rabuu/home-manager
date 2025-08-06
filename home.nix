@@ -17,8 +17,12 @@
     telegram-desktop
     fastfetch
 
+    nerd-fonts.jetbrains-mono
+
     kdePackages.krohnkite
   ];
+
+  fonts.fontconfig.enable = true;
 
   xdg = {
     enable = true;
@@ -233,6 +237,11 @@
     profiles = {
       main = {
         colorScheme = "GruvboxBlack";
+
+        font = {
+          name = "JetBrainsMono Nerd Font";
+          size = 10;
+        };
 
         extraConfig = {
           General = {
