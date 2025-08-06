@@ -223,6 +223,17 @@
       lookAndFeel = "org.kde.breezetwilight.desktop";
     };
 
+    hotkeys.commands = { };
+
+    shortcuts = {
+      "services/org.kde.konsole.desktop" = {
+        _launch = "Meta+Shift+Enter";
+      };
+      "services/firefox-esr.desktop" = {
+        _launch = "Meta+Shift+B";
+      };
+    };
+
     input.keyboard.layouts = [
       {
         layout = "us";
