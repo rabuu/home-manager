@@ -16,6 +16,7 @@
     signal-desktop
     telegram-desktop
     fastfetch
+    jetbrains.idea-ultimate
 
     nerd-fonts.jetbrains-mono
 
