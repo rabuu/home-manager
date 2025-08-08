@@ -9,4 +9,4 @@ apt install build-essential sudo interception-tools interception-caps2esc nix-se
 adduser rabuu sudo
 adduser rabuu nix-users
 
-echo 'TODO: Configure interception-tools'
+cp ./etc/interception/udevmon.d/caps2esc.yaml /etc/interception/udevmon.d
