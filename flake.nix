@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixgl.url = "github:nix-community/nixGL";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,12 +16,12 @@
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, plasma-manager, ... }:
+    inputs@{ nixpkgs, nixgl, home-manager, plasma-manager, ... }:
     let
       system = "x86_64-linux";
     in
       {
-      homeConfigurations."rabuu" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."rabuu@proteus" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           inherit system;
           config.allowUnfree = true;
@@ -29,7 +30,10 @@
         modules = [
           inputs.plasma-manager.homeManagerModules.plasma-manager
           ./home
+          ./hosts/proteus.nix
         ];
+
+        extraSpecialArgs.nixgl = nixgl;
       };
     };
 }

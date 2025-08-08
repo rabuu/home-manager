@@ -10,15 +10,14 @@ in {
   imports = [
     ./apps
     ./plasma
+    ./nixgl.nix
     ./session.nix
     ./shell.nix
     ./gpg.nix
     ./browser.nix
     ./fonts.nix
     ./nextcloud-client.nix
-  ]
-  ++ (if hostname == "khaos" then [ ./hosts/khaos.nix ] else [])
-  ++ (if hostname == "proteus" then [ ./hosts/proteus.nix ] else []);
+  ];
 
   programs.home-manager.enable = true;
   home.stateVersion = "25.05";
