@@ -19,17 +19,17 @@
     let
       system = "x86_64-linux";
     in
-    {
+      {
       homeConfigurations."rabuu" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
-	  inherit system;
-	  config.allowUnfree = true;
-	};
+          inherit system;
+          config.allowUnfree = true;
+        };
 
         modules = [
-	  inputs.plasma-manager.homeManagerModules.plasma-manager
-          ./home.nix
-	];
+          inputs.plasma-manager.homeManagerModules.plasma-manager
+          ./home
+        ];
       };
     };
 }
