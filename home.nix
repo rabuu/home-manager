@@ -19,8 +19,6 @@
     jetbrains.idea-ultimate
 
     nerd-fonts.jetbrains-mono
-
-    kdePackages.krohnkite
   ];
 
   fonts.fontconfig.enable = true;
@@ -231,6 +229,21 @@
 
     hotkeys.commands = { };
 
+    kwin = {
+      virtualDesktops = {
+        number = 6;
+        rows = 2;
+      };
+
+      scripts.polonium = {
+        enable = true;
+        settings = {
+          borderVisibility = "borderAll";
+          layout.insertionPoint = "right";
+        };
+      };
+    };
+
     shortcuts = {
       "services/org.kde.konsole.desktop" = {
         _launch = "Meta+Shift+Return";
@@ -239,7 +252,203 @@
         _launch = "Meta+Shift+B";
       };
       "services/org.kde.krunner.desktop" = {
-        _launch = "Search";
+        _launch = [ "Meta+Alt+Space" "Search" ];
+      };
+
+      kwin = {
+        "Activate Window Demanding Attention" = "none";
+        "Cycle Overview" = "none";
+        "Cycle Overview Opposite" = "none";
+        "Decrease Opacity" = "none";
+        "Edit Tiles" = "none";
+        "Expose" = "none";
+        "ExposeAll" = "none";
+        "ExposeClass" = "none";
+        "ExposeClassCurrentDesktop" = "none";
+        "Grid View" = "Meta+G";
+        "Increase Opacity" = "none";
+        "Kill Window" = "Meta+Ctrl+Esc";
+        "Move Tablet to Next Output" = "none";
+        "MoveMouseToCenter" = "none";
+        "MoveMouseToFocus" = "none";
+        "MoveZoomDown" = "none";
+        "MoveZoomLeft" = "none";
+        "MoveZoomRight" = "none";
+        "MoveZoomUp" = "none";
+        "Overview" = "none";
+        "PoloniumCycleEngine" = "none";
+        "PoloniumFocusAbove" = "Meta+K";
+        "PoloniumFocusBelow" = "Meta+J";
+        "PoloniumFocusLeft" = "Meta+H";
+        "PoloniumFocusRight" = "Meta+L";
+        "PoloniumInsertAbove" = "Meta+Shift+K";
+        "PoloniumInsertBelow" = "Meta+Shift+J";
+        "PoloniumInsertLeft" = "Meta+Shift+H";
+        "PoloniumInsertRight" = "Meta+Shift+L";
+        "PoloniumOpenSettings" = "none";
+        "PoloniumResizeAbove" = "Meta+Ctrl+K";
+        "PoloniumResizeBelow" = "Meta+Ctrl+J";
+        "PoloniumResizeLeft" = "Meta+Ctrl+H";
+        "PoloniumResizeRight" = "Meta+Ctrl+L";
+        "PoloniumRetileWindow" = "Meta+Space";
+        "PoloniumSwitchBTree" = "Meta+Ctrl+B";
+        "PoloniumSwitchHalf" = "none";
+        "PoloniumSwitchKwin" = "Meta+Ctrl+F";
+        "PoloniumSwitchMonocle" = "Meta+Ctrl+M";
+        "PoloniumSwitchThreeColumn" = "Meta+Ctrl+T";
+        "Setup Window Shortcut" = "none";
+        "Show Desktop" = "none";
+        "Switch One Desktop Down" = "none";
+        "Switch One Desktop Up" = "none";
+        "Switch One Desktop to the Left" = "none";
+        "Switch One Desktop to the Right" = "none";
+        "Switch Window Down" = "none";
+        "Switch Window Left" = "none";
+        "Switch Window Right" = "none";
+        "Switch Window Up" = "none";
+        "Switch to Desktop 1" = "Meta+1";
+        "Switch to Desktop 10" = "none";
+        "Switch to Desktop 11" = "none";
+        "Switch to Desktop 12" = "none";
+        "Switch to Desktop 13" = "none";
+        "Switch to Desktop 14" = "none";
+        "Switch to Desktop 15" = "none";
+        "Switch to Desktop 16" = "none";
+        "Switch to Desktop 17" = "none";
+        "Switch to Desktop 18" = "none";
+        "Switch to Desktop 19" = "none";
+        "Switch to Desktop 2" = "Meta+2";
+        "Switch to Desktop 20" = "none";
+        "Switch to Desktop 3" = "Meta+3";
+        "Switch to Desktop 4" = "Meta+4";
+        "Switch to Desktop 5" = "Meta+5";
+        "Switch to Desktop 6" = "Meta+6";
+        "Switch to Desktop 7" = "none";
+        "Switch to Desktop 8" = "none";
+        "Switch to Desktop 9" = "none";
+        "Switch to Next Desktop" = "none";
+        "Switch to Next Screen" = "none";
+        "Switch to Previous Desktop" = "none";
+        "Switch to Previous Screen" = "none";
+        "Switch to Screen 0" = "none";
+        "Switch to Screen 1" = "none";
+        "Switch to Screen 2" = "none";
+        "Switch to Screen 3" = "none";
+        "Switch to Screen 4" = "none";
+        "Switch to Screen 5" = "none";
+        "Switch to Screen 6" = "none";
+        "Switch to Screen 7" = "none";
+        "Switch to Screen Above" = "none";
+        "Switch to Screen Below" = "none";
+        "Switch to Screen to the Left" = "none";
+        "Switch to Screen to the Right" = "none";
+        "Toggle Night Color" = "none";
+        "Toggle Window Raise/Lower" = "none";
+        "Walk Through Windows" = "Alt+Tab";
+        "Walk Through Windows (Reverse)" = "Alt+Shift+Tab";
+        "Walk Through Windows Alternative" = "none";
+        "Walk Through Windows Alternative (Reverse)" = "none";
+        "Walk Through Windows of Current Application" = "none";
+        "Walk Through Windows of Current Application (Reverse)" = "none";
+        "Walk Through Windows of Current Application Alternative" = "none";
+        "Walk Through Windows of Current Application Alternative (Reverse)" = "none";
+        "Window Above Other Windows" = "none";
+        "Window Below Other Windows" = "none";
+        "Window Close" = [ "Meta+Shift+C" "Alt+F4" ];
+        "Window Custom Quick Tile Bottom" = "none";
+        "Window Custom Quick Tile Left" = "none";
+        "Window Custom Quick Tile Right" = "none";
+        "Window Custom Quick Tile Top" = "none";
+        "Window Fullscreen" = "Meta+F";
+        "Window Grow Horizontal" = "none";
+        "Window Grow Vertical" = "none";
+        "Window Lower" = "none";
+        "Window Maximize" = "none";
+        "Window Maximize Horizontal" = "none";
+        "Window Maximize Vertical" = "none";
+        "Window Minimize" = "none";
+        "Window Move" = "none";
+        "Window Move Center" = "none";
+        "Window No Border" = "none";
+        "Window On All Desktops" = "none";
+        "Window One Desktop Down" = "none";
+        "Window One Desktop Up" = "none";
+        "Window One Desktop to the Left" = "none";
+        "Window One Desktop to the Right" = "none";
+        "Window One Screen Down" = "none";
+        "Window One Screen Up" = "none";
+        "Window One Screen to the Left" = "none";
+        "Window One Screen to the Right" = "none";
+        "Window Operations Menu" = "none";
+        "Window Pack Down" = "none";
+        "Window Pack Left" = "none";
+        "Window Pack Right" = "none";
+        "Window Pack Up" = "none";
+        "Window Quick Tile Bottom" = "none";
+        "Window Quick Tile Bottom Left" = "none";
+        "Window Quick Tile Bottom Right" = "none";
+        "Window Quick Tile Left" = "none";
+        "Window Quick Tile Right" = "none";
+        "Window Quick Tile Top" = "none";
+        "Window Quick Tile Top Left" = "none";
+        "Window Quick Tile Top Right" = "none";
+        "Window Raise" = "none";
+        "Window Resize" = "none";
+        "Window Shade" = "none";
+        "Window Shrink Horizontal" = "none";
+        "Window Shrink Vertical" = "none";
+        "Window to Desktop 1" = "Meta+Shift+1";
+        "Window to Desktop 10" = "none";
+        "Window to Desktop 11" = "none";
+        "Window to Desktop 12" = "none";
+        "Window to Desktop 13" = "none";
+        "Window to Desktop 14" = "none";
+        "Window to Desktop 15" = "none";
+        "Window to Desktop 16" = "none";
+        "Window to Desktop 17" = "none";
+        "Window to Desktop 18" = "none";
+        "Window to Desktop 19" = "none";
+        "Window to Desktop 2" = "Meta+Shift+2";
+        "Window to Desktop 20" = "none";
+        "Window to Desktop 3" = "Meta+Shift+3";
+        "Window to Desktop 4" = "Meta+Shift+4";
+        "Window to Desktop 5" = "Meta+Shift+5";
+        "Window to Desktop 6" = "Meta+Shift+6";
+        "Window to Desktop 7" = "none";
+        "Window to Desktop 8" = "none";
+        "Window to Desktop 9" = "none";
+        "Window to Next Desktop" = "none";
+        "Window to Next Screen" = "none";
+        "Window to Previous Desktop" = "none";
+        "Window to Previous Screen" = "none";
+        "Window to Screen 0" = "none";
+        "Window to Screen 1" = "none";
+        "Window to Screen 2" = "none";
+        "Window to Screen 3" = "none";
+        "Window to Screen 4" = "none";
+        "Window to Screen 5" = "none";
+        "Window to Screen 6" = "none";
+        "Window to Screen 7" = "none";
+        "disableInputCapture" = "none";
+        "view_actual_size" = "Meta+0";
+        "view_zoom_in" = [ "Meta++" "Meta+=" ];
+        "view_zoom_out" = "Meta+-";
+      };
+
+      plasmashell = {
+        "activate task manager entry 1" = "none";
+        "activate task manager entry 2" = "none";
+        "activate task manager entry 3" = "none";
+        "activate task manager entry 4" = "none";
+        "activate task manager entry 5" = "none";
+        "activate task manager entry 6" = "none";
+        "activate task manager entry 7" = "none";
+        "activate task manager entry 8" = "none";
+        "activate task manager entry 9" = "none";
+      };
+
+      ksmserver = {
+        "Lock Session" = "Screensaver";
       };
     };
 
