@@ -8,6 +8,7 @@
 
   home.packages = with pkgs; [
     neovim
+    eza
     fd
     ripgrep
     wl-clipboard
@@ -64,6 +65,19 @@
   programs.fish = {
     enable = true;
 
+    shellAliases = {
+      cp = "cp --interactive --verbose";
+      mv = "mv --interactive --verbose";
+      rm = "rm --interactive=once --verbose";
+      rmdir = "rmdir --verbose";
+      mkdir = "mkdir --parents --verbose";
+
+      eza = "eza --group-directories-first";
+      ls = "eza";
+
+      abandon = "disown; exit";
+    };
+
     shellAbbrs = {
       hm = "home-manager";
 
@@ -72,6 +86,15 @@
       poweroff = "systemctl poweroff";
       sleep = "systemctl suspend";
       hibernate = "systemctl hibernate";
+
+      l = "ls -1a";
+      ll = "ls -la";
+      lt = "eza -T --git-ignore";
+
+      ab = "abandon";
+      ok = "okular";
+
+      nixdev = "nix develop --command fish";
     };
 
     interactiveShellInit = ''
