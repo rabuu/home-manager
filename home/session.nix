@@ -21,6 +21,7 @@
   };
 
   home.sessionPath = [
+    "$HOME/.local/bin"
     "$HOME/.nix-profile/bin"
     "$XDG_DATA_HOME/cargo/bin"
   ];
