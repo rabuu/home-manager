@@ -4,6 +4,7 @@
     eza
     fd
     ripgrep
+    onefetch
     wl-clipboard
     libreoffice
     discord
