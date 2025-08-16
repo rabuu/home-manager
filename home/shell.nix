@@ -46,6 +46,8 @@
       ok = "okular";
 
       nixdev = "nix develop --command fish";
+
+      u = "unicd";
     };
 
     interactiveShellInit = ''
