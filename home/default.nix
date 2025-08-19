@@ -8,7 +8,7 @@ in {
   home.homeDirectory = "/home/${username}";
 
   imports = [
-    ./apps
+    ./programs
     ./plasma
     ./nixgl.nix
     ./session.nix
