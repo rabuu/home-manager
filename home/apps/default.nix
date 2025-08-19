@@ -5,6 +5,7 @@
     fd
     ripgrep
     onefetch
+    tokei
     wl-clipboard
     libreoffice
     discord
