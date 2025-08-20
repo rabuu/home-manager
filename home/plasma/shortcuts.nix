@@ -155,7 +155,7 @@
       "Window Shade" = "none";
       "Window Shrink Horizontal" = "none";
       "Window Shrink Vertical" = "none";
-      "Window to Desktop 1" = "Meta+Shift+1";
+      "Window to Desktop 1" = "Meta+!";
       "Window to Desktop 10" = "none";
       "Window to Desktop 11" = "none";
       "Window to Desktop 12" = "none";
@@ -166,12 +166,12 @@
       "Window to Desktop 17" = "none";
       "Window to Desktop 18" = "none";
       "Window to Desktop 19" = "none";
-      "Window to Desktop 2" = "Meta+Shift+2";
+      "Window to Desktop 2" = "Meta+@";
       "Window to Desktop 20" = "none";
-      "Window to Desktop 3" = "Meta+Shift+3";
-      "Window to Desktop 4" = "Meta+Shift+4";
-      "Window to Desktop 5" = "Meta+Shift+5";
-      "Window to Desktop 6" = "Meta+Shift+6";
+      "Window to Desktop 3" = "Meta+#";
+      "Window to Desktop 4" = "Meta+$";
+      "Window to Desktop 5" = "Meta+%";
+      "Window to Desktop 6" = "Meta+^";
       "Window to Desktop 7" = "none";
       "Window to Desktop 8" = "none";
       "Window to Desktop 9" = "none";
