@@ -39,6 +39,7 @@ return {
 		require("lspconfig").texlab.setup({ capabilities = capabilities })
 		require("lspconfig").gopls.setup({ capabilities = capabilities })
 		require("lspconfig").zls.setup({ capabilities = capabilities })
+		require("lspconfig").tinymist.setup({ capabilities = capabilities })
 
 	end,
 }

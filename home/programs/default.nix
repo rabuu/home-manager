@@ -1,17 +1,24 @@
 { config, pkgs, ... }:
 {
   home.packages = with pkgs; [
+    wl-clipboard
+
     eza
     fd
     ripgrep
+
+    fastfetch
     onefetch
     tokei
-    wl-clipboard
+
     libreoffice
+    typst
+    tinymist
+
     discord
     signal-desktop
     telegram-desktop
-    fastfetch
+
     jetbrains.idea-ultimate
   ];
 
