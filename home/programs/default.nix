@@ -21,7 +21,7 @@
 
     jetbrains.idea-ultimate
 
-    kdePackages.kdenlive
+    (config.lib.nixGL.wrap kdePackages.kdenlive)
   ];
 
   imports = [
