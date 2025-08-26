@@ -20,6 +20,8 @@
     telegram-desktop
 
     jetbrains.idea-ultimate
+
+    kdePackages.kdenlive
   ];
 
   imports = [
