@@ -9,7 +9,7 @@
     scripts.polonium = {
       enable = true;
       settings = {
-        borderVisibility = "borderAll";
+        borderVisibility = "noBorderAll";
         resizeAmount = 80;
         layout.insertionPoint = "right";
         filter.processes = [
