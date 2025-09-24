@@ -28,3 +28,10 @@ map("n", "<C-u>", "<C-u>zz")
 -- better tabbing
 map("v", "<", "<gv")
 map("v", ">", ">gv")
+
+-- lsp
+map("n", "grd", vim.lsp.buf.definition, { desc = "go to definition"})
+map("n", "grf", vim.lsp.buf.format, { desc = "format code"})
+
+-- diagnostics
+map("n", "<leader>d", vim.diagnostic.open_float, { desc = "show diagnostics"})
