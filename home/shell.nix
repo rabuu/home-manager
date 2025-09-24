@@ -50,6 +50,10 @@
       u = "unicd";
     };
 
+    functions = {
+      kde_reload_application_cache.body = "kbuildsycoca5\nkbuildsycoca6";
+    };
+
     interactiveShellInit = ''
       set fish_greeting
       set fish_autosuggestion_enabled 0

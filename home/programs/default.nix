@@ -14,12 +14,18 @@
     libreoffice
     typst
     tinymist
+    typship
 
     discord
     signal-desktop
     telegram-desktop
 
+    chromium
+    tor-browser
+
     jetbrains.idea-ultimate
+
+    testdisk
 
     (config.lib.nixGL.wrap kdePackages.kdenlive)
   ];
