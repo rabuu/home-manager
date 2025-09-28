@@ -1,1 +1,0 @@
-/home/rabuu/src/compli/editor/vim/ftdetect/compli.vim
