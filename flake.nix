@@ -35,5 +35,19 @@
 
         extraSpecialArgs.nixgl = nixgl;
       };
+      homeConfigurations."rabuu@khaos" = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+
+        modules = [
+          inputs.plasma-manager.homeManagerModules.plasma-manager
+          ./home
+          ./hosts/khaos.nix
+        ];
+
+        extraSpecialArgs.nixgl = nixgl;
+      };
     };
 }
