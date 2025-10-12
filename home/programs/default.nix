@@ -37,6 +37,6 @@
     ./konsole.nix
     ./neovim.nix
     ./pass.nix
-    ./tmux.nix
+    ./zellij.nix
   ];
 }

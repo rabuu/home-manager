@@ -6,6 +6,8 @@
 
     profiles = {
       main = {
+        command = "zellij";
+
         colorScheme = "GruvboxBlack";
 
         font = {
