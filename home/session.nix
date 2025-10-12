@@ -9,6 +9,18 @@
       "/usr/local/share"
       "/usr/share"
     ];
+
+    mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "default-web-browser" = [ "firefox-esr.desktop" ];
+        "text/html" = [ "firefox-esr.desktop" ];
+        "x-scheme-handler/http" = [ "firefox-esr.desktop" ];
+        "x-scheme-handler/https" = [ "firefox-esr.desktop" ];
+        "x-scheme-handler/about" = [ "firefox-esr.desktop" ];
+        "x-scheme-handler/unknown" = [ "firefox-esr.desktop" ];
+      };
+    };
   };
 
   home.sessionVariables = {
