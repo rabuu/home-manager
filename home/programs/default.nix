@@ -19,10 +19,12 @@
     discord
     signal-desktop
     telegram-desktop
+    slack
 
     chromium
     tor-browser
 
+    vscode
     jetbrains.idea-ultimate
 
     testdisk
