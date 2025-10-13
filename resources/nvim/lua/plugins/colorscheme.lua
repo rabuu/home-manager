@@ -4,6 +4,7 @@ return {
 	opts = {
 		overrides = {
 			Normal = { bg = "#000000" },
+			SignColumn = { bg = "#000000" },
 		},
 	},
 	config = true,
