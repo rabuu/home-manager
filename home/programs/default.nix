@@ -24,6 +24,7 @@
     ./direnv.nix
     ./git.nix
     ./konsole.nix
+    ./latexmk.nix
     ./neovim.nix
     ./pass.nix
     ./zellij.nix
