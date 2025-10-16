@@ -5,6 +5,8 @@
     eza
     fd
     ripgrep
+    tree-sitter
+    nodejs
     fastfetch
     onefetch
     tokei
