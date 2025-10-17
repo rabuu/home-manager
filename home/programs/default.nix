@@ -11,6 +11,7 @@
     onefetch
     tokei
     libreoffice
+    thunderbird
     discord
     signal-desktop
     telegram-desktop
