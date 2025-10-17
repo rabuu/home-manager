@@ -47,6 +47,7 @@ return {
 	-- POLARITY
 	{
 		"rabuu/polarity.nvim",
+		dev = false,
 		ft = "polarity",
 		opts = {
 			auto_format = false,
