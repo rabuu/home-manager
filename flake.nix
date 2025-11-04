@@ -49,5 +49,19 @@
 
         extraSpecialArgs.nixgl = nixgl;
       };
+      homeConfigurations."rabuu@deb01" = home-manager.lib.homeManagerConfiguration {
+        pkgs = import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        };
+
+        modules = [
+          inputs.plasma-manager.homeModules.plasma-manager
+          ./home
+          ./hosts/deb01.nix
+        ];
+
+        extraSpecialArgs.nixgl = nixgl;
+      };
     };
 }
