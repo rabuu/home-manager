@@ -24,6 +24,7 @@ vim.opt.spelllang = { "en_us", "de_20" }
 vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 vim.opt.confirm = true
 vim.opt.shortmess = "Ic"
+vim.opt.exrc = true
 vim.mouse = "a"
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
