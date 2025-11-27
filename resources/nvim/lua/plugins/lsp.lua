@@ -7,6 +7,7 @@ return {
 		vim.lsp.enable("zls")
 		vim.lsp.enable("tinymist")
 		vim.lsp.enable("rust_analyzer")
+		vim.lsp.enable("ocamllsp")
 
 		vim.diagnostic.config({
 			severity_sort = true,
