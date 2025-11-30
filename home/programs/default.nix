@@ -19,6 +19,7 @@
     chromium
     tor-browser
     vscode
+    spotify
     (config.lib.nixGL.wrap kdePackages.kdenlive)
   ];
 
