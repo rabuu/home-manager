@@ -6,9 +6,9 @@ return {
 		lazy = false,
 		config = true,
 		keys = {
-			{ "<Leader>f", vim.cmd.Fyler, { desc = "Open fyler file manager" } },
+			{ "<leader>f", vim.cmd.Fyler, { desc = "Open fyler file manager" } },
 			{
-				"<Leader>F",
+				"<leader>F",
 				function() require("fyler").open({ kind = "split_left_most" }) end,
 				{ desc = "Open fyler file manager (split)" }
 			},
@@ -28,7 +28,7 @@ return {
 	-- 			["^"] = "actions.parent",
 	-- 		},
 	-- 	},
-	-- 	keys = { { "<Leader>f", vim.cmd.Oil, desc = "oil file manager" } },
+	-- 	keys = { { "<leader>f", vim.cmd.Oil, desc = "oil file manager" } },
 	-- 	cmd = "Oil",
 	-- 	config = function(_, opts)
 	-- 		require("oil").setup(opts)

@@ -13,17 +13,17 @@ return {
 		end,
 		keys = {
 			{
-				"<Leader>.",
+				"<leader>.",
 				function() require("mini.pick").builtin.files() end,
 				desc = "Pick files",
 			},
 			{
-				"<Leader>,",
+				"<leader>,",
 				function() require("mini.pick").builtin.buffers() end,
 				desc = "Pick buffers",
 			},
 			{
-				"<Leader>/",
+				"<leader>/",
 				function() require("mini.pick").builtin.grep_live() end,
 				desc = "Grep live",
 			},

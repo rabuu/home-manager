@@ -19,7 +19,7 @@ map("v", "gj", "j")
 map("v", "gk", "k")
 
 -- toggle spellchecking
-map("n", "<Leader>Ts", ":set spell!<CR>", { desc = "spell checking" })
+map("n", "<leader>Ts", ":set spell!<CR>", { desc = "spell checking" })
 
 -- center when scrolling
 map("n", "<C-d>", "<C-d>zz")
