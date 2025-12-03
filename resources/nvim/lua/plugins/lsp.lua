@@ -12,12 +12,7 @@ return {
 		vim.diagnostic.config({
 			severity_sort = true,
 			virtual_text = true,
-			virtual_lines = {
-				current_line = true,
-			},
-			float = {
-				focusable = false,
-			},
+			float = { focusable = false },
 			signs = {
 				text = {
 					[vim.diagnostic.severity.ERROR] = "",
