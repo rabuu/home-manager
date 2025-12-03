@@ -1,7 +1,5 @@
 return {
 	{ "nmac427/guess-indent.nvim", config = true },
-
-	{ "stevearc/dressing.nvim", config = true },
 	{
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
