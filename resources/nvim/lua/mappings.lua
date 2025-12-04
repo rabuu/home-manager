@@ -35,3 +35,7 @@ map("n", "grf", vim.lsp.buf.format, { desc = "format code"})
 
 -- diagnostics
 map("n", "<leader>d", vim.diagnostic.open_float, { desc = "show diagnostics"})
+
+-- yank to / paste from system clipboard
+map({"n", "v"}, "<leader>y", "\"+y", { desc = "yank to system clipboard" })
+map({"n", "v"}, "<leader>p", "\"+p", { desc = "paste from system clipboard" })
