@@ -5,6 +5,7 @@ return {
 			auto_close = true,
 			auto_preview = false,
 		},
+		cmd = "Trouble",
 		keys = {
 			{
 				"<leader>cs",
