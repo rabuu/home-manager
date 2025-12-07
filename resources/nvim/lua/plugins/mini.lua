@@ -2,6 +2,7 @@ return {
 	{
 		"nvim-mini/mini.nvim",
 		version = false,
+		lazy = false,
 		config = function()
 			require("mini.ai").setup()
 			require("mini.comment").setup()
