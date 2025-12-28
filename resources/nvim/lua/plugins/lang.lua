@@ -49,9 +49,9 @@ return {
 		"polarity-lang/neovim",
 		dev = false,
 		ft = "polarity",
-		opts = {
-			auto_format = false,
-		},
+		config = function()
+			vim.lsp.enable("polarity")
+		end,
 	},
 
 	-- RUST
