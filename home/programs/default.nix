@@ -20,6 +20,7 @@
     tor-browser
     vscode
     spotify
+    poppler-utils
     (config.lib.nixGL.wrap kdePackages.kdenlive)
   ];
 
