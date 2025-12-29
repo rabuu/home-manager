@@ -13,6 +13,8 @@
       cm = "commit";
       df = "diff";
       dfc = "diff --cached";
+      sw = "switch";
+      rs = "restore";
     };
 
     extraConfig = {
