@@ -20,6 +20,9 @@
       {
         layout = "de";
       }
+      {
+        layout = "gr";
+      }
     ];
   };
 }
