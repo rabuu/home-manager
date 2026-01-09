@@ -1,4 +1,4 @@
 { pkgs, nixgl, ... }:
 {
-  nixGL.packages = import nixgl { inherit pkgs; };
+  targets.genericLinux.nixGL.packages = import nixgl { inherit pkgs; };
 }
