@@ -7,6 +7,7 @@
     ripgrep
     tree-sitter
     nodejs
+    rustup
     fastfetch
     onefetch
     tokei
