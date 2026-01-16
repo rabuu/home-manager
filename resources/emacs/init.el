@@ -153,5 +153,8 @@
 (use-package vterm
   :ensure t)
 
+(use-package sly
+  :ensure t)
+
 (provide 'init)
 ;;; init.el ends here
