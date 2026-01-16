@@ -8,6 +8,7 @@
     tree-sitter
     nodejs
     rustup
+    cmake
     fastfetch
     onefetch
     tokei
@@ -28,6 +29,7 @@
   imports = [
     ./bat.nix
     ./direnv.nix
+    ./emacs.nix
     ./git.nix
     ./konsole.nix
     ./latexmk.nix
