@@ -8,6 +8,9 @@ return {
 		vim.lsp.enable("tinymist")
 		vim.lsp.enable("rust_analyzer")
 		vim.lsp.enable("ocamllsp")
+		vim.lsp.enable("html")
+		vim.lsp.enable("cssls")
+		vim.lsp.enable("ts_ls")
 
 		vim.diagnostic.config({
 			severity_sort = true,
