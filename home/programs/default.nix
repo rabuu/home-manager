@@ -13,6 +13,7 @@
     onefetch
     tokei
     libreoffice
+    gimp
     thunderbird
     discord
     signal-desktop
