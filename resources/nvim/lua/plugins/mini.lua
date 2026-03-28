@@ -7,7 +7,13 @@ return {
 			require("mini.ai").setup()
 			require("mini.comment").setup()
 			require("mini.icons").setup()
-			require("mini.pairs").setup()
+			require("mini.pairs").setup({
+				mappings = {
+					-- This is is the default setting for ' but also blocks pairing directly after <.
+					-- The reason is Rust lifetimes. But I would prefer to just disable it for some filetypes.
+					["'"] = { action = 'closeopen', pair = "''", neigh_pattern = '^[^%a\\<]', register = { cr = false } }
+				}
+			})
 			require("mini.pick").setup()
 			require("mini.statusline").setup()
 		end,
