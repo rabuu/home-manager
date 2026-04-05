@@ -1,3 +1,4 @@
+require("colorscheme")
 require("settings")
 require("leader")
 require("mappings")

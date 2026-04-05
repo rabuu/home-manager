@@ -1,20 +1,16 @@
-local function map(mode, lhs, rhs, opts)
-	if not opts then
-		opts = { remap = false, silent = true }
-	end
-	vim.keymap.set(mode, lhs, rhs, opts)
-end
+local map = vim.keymap.set
+local opts = { remap = false, silent = true }
 
 -- disable search highlight on escape
 map("n", "<esc>", "<cmd>nohlsearch<cr>")
 
 -- center when scrolling
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-d>", "<C-d>zz", opts)
+map("n", "<C-u>", "<C-u>zz", opts)
 
--- better tabbing
-map("v", "<", "<gv")
-map("v", ">", ">gv")
+-- better tabbing (stay in visual mode)
+map("v", "<", "<gv", opts)
+map("v", ">", ">gv", opts)
 
 -- lsp
 map("n", "grd", vim.lsp.buf.definition, { desc = "go to definition"})
