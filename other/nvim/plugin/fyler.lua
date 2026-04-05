@@ -12,12 +12,12 @@ vim.keymap.set(
 	{ "n", "v" },
 	"<leader>f",
 	vim.cmd.Fyler,
-	{ desc = "open file manager (Fyler)" }
+	{ desc = "open file manager (fyler)" }
 )
 
 vim.keymap.set(
 	{ "n", "v" },
 	"<leader>F",
 	function() fyler.open({ kind = "split_left_most" }) end,
-	{ desc = "open file manager in split (Fyler)" }
+	{ desc = "open file manager in split (fyler)" }
 )
