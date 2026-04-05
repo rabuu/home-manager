@@ -3,6 +3,7 @@
   programs.password-store = {
     enable = true;
     package = pkgs.pass.withExtensions (exts: [ exts.pass-otp ]);
+    settings = { };
   };
 
   # HACK(2025-08-03): Fish completion not working OOTB for pass
