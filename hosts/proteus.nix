@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
-  nixGL.defaultWrapper = "mesa";
-  nixGL.installScripts = [ "mesa" ];
+  targets.genericLinux.nixGL = {
+    defaultWrapper = "mesa";
+    installScripts = [ "mesa" ];
+  };
 }
