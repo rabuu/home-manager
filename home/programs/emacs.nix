@@ -10,7 +10,7 @@ in
   ];
 
   xdg.configFile."emacs" = {
-    source = ../../resources/emacs;
+    source = ../../other/emacs;
     recursive = true;
   };
 }

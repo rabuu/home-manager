@@ -33,7 +33,7 @@
     };
 
     customColorSchemes = {
-      GruvboxBlack = ../../resources/konsole/GruvboxBlack.colorscheme;
+      GruvboxBlack = ../../other/konsole/GruvboxBlack.colorscheme;
     };
   };
 }

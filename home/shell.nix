@@ -52,7 +52,7 @@
     '';
   };
 
-  xdg.configFile."fish/conf.d/gruvbox.fish".source = ../resources/fish/gruvbox.fish;
+  xdg.configFile."fish/conf.d/gruvbox.fish".source = ../other/fish/gruvbox.fish;
 
   programs.starship = {
     enable = true;
