@@ -6,6 +6,21 @@ vim.pack.add({
 	"https://github.com/JoosepAlviste/nvim-ts-context-commentstring",
 })
 
+local treesitter = require("nvim-treesitter")
+
+treesitter.setup()
+
+treesitter.install({
+	"comment",
+	"diff",
+	"gitcommit",
+	"markdown",
+	"markdown_inline",
+	"rust",
+	"latex",
+	"typst",
+})
+
 vim.api.nvim_create_autocmd("PackChanged", {
 	callback = function(ev)
 		local name, kind = ev.data.spec.name, ev.data.kind
@@ -16,13 +31,13 @@ vim.api.nvim_create_autocmd("PackChanged", {
 	end
 })
 
-require("nvim-treesitter").install({
-	"comment",
-	"diff",
-	"gitcommit",
-	"markdown",
-	"markdown_inline",
-	"rust",
-	"latex",
-	"typst",
+-- auto-start treesitter (if possible)
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "*" },
+	callback = function()
+		local filtype = vim.bo.filetype
+		if filetype and filetype ~= "" then
+			pcall(vim.treesitter.start)
+		end
+	end,
 })
