@@ -1,0 +1,15 @@
+vim.pack.add({ "https://github.com/neovim/nvim-lspconfig" })
+
+vim.lsp.enable("clangd")
+vim.lsp.enable("texlab")
+vim.lsp.enable("gopls")
+vim.lsp.enable("zls")
+vim.lsp.enable("tinymist")
+vim.lsp.enable("rust_analyzer")
+vim.lsp.enable("ocamllsp")
+vim.lsp.enable("html")
+vim.lsp.enable("cssls")
+vim.lsp.enable("ts_ls")
+
+vim.keymap.set("n", "grd", vim.lsp.buf.definition, { desc = "go to definition"})
+vim.keymap.set("n", "grf", vim.lsp.buf.format, { desc = "format code"})
