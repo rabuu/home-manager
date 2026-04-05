@@ -31,13 +31,18 @@ vim.api.nvim_create_autocmd("PackChanged", {
 	end
 })
 
--- auto-start treesitter (if possible)
-vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "*" },
-	callback = function()
-		local filtype = vim.bo.filetype
-		if filetype and filetype ~= "" then
-			pcall(vim.treesitter.start)
-		end
-	end,
-})
+-- auto-start treesitter for installed parsers
+local installed_parsers = treesitter.get_installed("parsers")
+local ts_startup_group = vim.api.nvim_create_augroup("treesitter-startup", {})
+for _, parser in pairs(installed_parsers) do
+	local filetypes = vim.treesitter.language.get_filetypes(parser)
+	vim.api.nvim_create_autocmd({ "FileType" }, {
+		group = ts_startup_group,
+		pattern = filetypes,
+		callback = function()
+			vim.treesitter.start()
+			vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+			vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+		end,
+	})
+end
