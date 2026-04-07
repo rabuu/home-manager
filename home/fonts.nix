@@ -5,6 +5,11 @@
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
 
+    noto-fonts
+    noto-fonts-color-emoji
+
+    libertinus
+
     # CV (typst template brilliant-cv:2.0.8)
     roboto
     source-sans
