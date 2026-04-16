@@ -12,6 +12,19 @@ conform.setup({
 			"typstyle",
 			lsp_format = "fallback",
 		},
+		typescript = {
+			"biome",
+			lsp_format = "fallback",
+		},
+		json = {
+			"biome",
+			"biome-check",
+			lsp_format = "fallback",
+		},
+		css = {
+			"biome",
+			lsp_format = "fallback",
+		},
 	},
 	format_on_save = {
 		timeout_ms = 500,
