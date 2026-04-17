@@ -29,6 +29,7 @@
 
   imports = [
     ./bat.nix
+    ./delta.nix
     ./direnv.nix
     ./emacs.nix
     ./git.nix
