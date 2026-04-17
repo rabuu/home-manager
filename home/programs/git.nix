@@ -27,6 +27,10 @@
       push = {
         autoSetupRemote = true;
       };
+
+      merge = {
+        conflictStyle = "zdiff3";
+      };
     };
   };
 }
