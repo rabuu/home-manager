@@ -10,6 +10,7 @@ vim.lsp.enable("ocamllsp")
 vim.lsp.enable("html")
 vim.lsp.enable("cssls")
 vim.lsp.enable("ts_ls")
+vim.lsp.enable("harper_ls")
 
 vim.keymap.set("n", "grd", vim.lsp.buf.definition, { desc = "go to definition"})
 vim.keymap.set("n", "grf", vim.lsp.buf.format, { desc = "format code"})
