@@ -13,16 +13,15 @@ conform.setup({
 			lsp_format = "fallback",
 		},
 		typescript = {
-			"biome",
+			"biome-check",
 			lsp_format = "fallback",
 		},
 		json = {
-			"biome",
 			"biome-check",
 			lsp_format = "fallback",
 		},
 		css = {
-			"biome",
+			"biome-check",
 			lsp_format = "fallback",
 		},
 	},
