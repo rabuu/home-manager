@@ -24,6 +24,7 @@
     vscode
     spotify
     poppler-utils
+    hyperfine
     (config.lib.nixGL.wrap kdePackages.kdenlive)
   ];
 
