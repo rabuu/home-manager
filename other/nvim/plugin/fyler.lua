@@ -1,17 +1,16 @@
-vim.pack.add({
-	{
-		src = "https://github.com/A7Lavinraj/fyler.nvim",
-		version = "stable",
-	},
-})
+vim.pack.add({ "https://github.com/FylerOrg/fyler.nvim" })
 
 local fyler = require("fyler")
-fyler.setup()
+fyler.setup({
+	integrations = {
+		icon = "mini_icons",
+	},
+})
 
 vim.keymap.set(
 	{ "n", "v" },
 	"<leader>f",
-	vim.cmd.Fyler,
+	function() fyler.open() end,
 	{ desc = "open file manager (fyler)" }
 )
 
