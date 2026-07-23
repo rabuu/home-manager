@@ -2,8 +2,19 @@ vim.pack.add({ "https://github.com/FylerOrg/fyler.nvim" })
 
 local fyler = require("fyler")
 fyler.setup({
+	mappings = {
+		n = {
+			["^"] = {
+				action = "visit",
+				args = { parent = true },
+			},
+		},
+	},
 	integrations = {
 		icon = "mini_icons",
+	},
+	ui = {
+		indent_guides = true,
 	},
 })
 
