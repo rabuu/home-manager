@@ -14,7 +14,9 @@ conform.setup({
 		},
 		typescript = {
 			"biome-check",
+			"prettier",
 			lsp_format = "fallback",
+			stop_after_first = true,
 		},
 		json = {
 			"biome-check",
