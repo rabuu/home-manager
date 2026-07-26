@@ -23,10 +23,10 @@
     tor-browser
     vscode
     spotify
-    foliate
     poppler-utils
     hyperfine
     (config.lib.nixGL.wrap kdePackages.kdenlive)
+    (config.lib.nixGL.wrap foliate)
   ];
 
   imports = [
