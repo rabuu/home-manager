@@ -6,12 +6,12 @@ require("mini.comment").setup()
 
 require("mini.pairs").setup({
 	mappings = {
-		-- This is is the default setting for ' but also blocks pairing directly after <.
+		-- This is is the default setting for ' but also blocks pairing directly after < or &.
 		-- The reason is Rust lifetimes. But I would prefer to just disable it for some filetypes.
 		["'"] = {
 			action = 'closeopen',
 			pair = "''",
-			neigh_pattern = '^[^%a\\<]',
+			neigh_pattern = '^[^%a\\<&]',
 			register = { cr = false }
 		}
 	}
