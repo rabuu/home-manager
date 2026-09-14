@@ -26,7 +26,6 @@
     poppler-utils
     hyperfine
     ausweisapp
-    (config.lib.nixGL.wrap kdePackages.kdenlive)
     (config.lib.nixGL.wrap foliate)
   ];
 
