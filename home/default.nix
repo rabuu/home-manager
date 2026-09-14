@@ -8,15 +8,19 @@ in {
   home.homeDirectory = "/home/${username}";
 
   imports = [
-    ./programs
     ./plasma
+    ./browser.nix
+    ./emacs.nix
+    ./fonts.nix
+    ./gpg.nix
+    ./neovim.nix
+    ./nextcloud-client.nix
     ./nixgl.nix
+    ./pass.nix
+    ./programs.nix
     ./session.nix
     ./shell.nix
-    ./gpg.nix
-    ./browser.nix
-    ./fonts.nix
-    ./nextcloud-client.nix
+    ./zellij.nix
   ];
 
   programs.home-manager.enable = true;
