@@ -127,6 +127,8 @@
     };
   };
 
+  programs.qalculate.enable = true;
+
   # latexmk
   xdg.configFile."latexmk/latexmkrc".text = ''
 $pdflatex = 'lualatex -shell-escape %O %S';
