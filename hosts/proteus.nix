@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
-  targets.genericLinux.nixGL = {
-    defaultWrapper = "mesa";
-    installScripts = [ "mesa" ];
-  };
+  home.packages = with pkgs; [
+    # ...
+  ];
 }
