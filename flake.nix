@@ -23,7 +23,7 @@
     let
       system = "x86_64-linux";
     in
-      {
+    {
       homeConfigurations."rabuu@proteus" = home-manager.lib.homeManagerConfiguration {
         pkgs = import nixpkgs {
           inherit system;
