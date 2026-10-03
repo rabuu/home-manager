@@ -14,6 +14,7 @@
     tokei
     libreoffice
     gimp
+    vlc
     thunderbird
     discord
     signal-desktop
