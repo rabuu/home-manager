@@ -22,35 +22,28 @@
     inputs@{ nixpkgs, nixgl, home-manager, plasma-manager, ... }:
     let
       system = "x86_64-linux";
-    in
-    {
-      homeConfigurations."rabuu@proteus" = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs {
-          inherit system;
-          config.allowUnfree = true;
-        };
+
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
+
+      mkHome = host: home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
 
         modules = [
           inputs.plasma-manager.homeModules.plasma-manager
           ./home
-          ./hosts/proteus.nix
+          ./hosts/${host}.nix
         ];
 
         extraSpecialArgs.nixgl = nixgl;
       };
-      homeConfigurations."rabuu@khaos" = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs {
-          inherit system;
-          config.allowUnfree = true;
-        };
-
-        modules = [
-          inputs.plasma-manager.homeModules.plasma-manager
-          ./home
-          ./hosts/khaos.nix
-        ];
-
-        extraSpecialArgs.nixgl = nixgl;
+    in
+    {
+      homeConfigurations = {
+        "rabuu@proteus" = mkHome "proteus";
+        "rabuu@khaos" = mkHome "khaos";
       };
     };
 }
