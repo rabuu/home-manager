@@ -15,6 +15,7 @@
     libreoffice
     gimp
     vlc
+    ffmpeg
     thunderbird
     discord
     signal-desktop
