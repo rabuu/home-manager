@@ -42,8 +42,9 @@
     in
     {
       homeConfigurations = {
-        "rabuu@proteus" = mkHome "proteus";
         "rabuu@khaos" = mkHome "khaos";
+        "rabuu@kowalski" = mkHome "kowalski";
+        "rabuu@proteus" = mkHome "proteus";
       };
     };
 }
