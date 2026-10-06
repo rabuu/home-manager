@@ -10,10 +10,11 @@
 
     libertinus
 
-    # CV (typst template brilliant-cv:2.0.8)
+    # CV (typst template brilliant-cv:2.0.8 and modern-cv:0.10.0)
     roboto
     source-sans
     source-sans-pro
     font-awesome_6
+    font-awesome_7
   ];
 }
