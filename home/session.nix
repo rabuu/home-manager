@@ -30,11 +30,14 @@
     SUDO_EDITOR = "vi";
     PAGER = "bat";
     DIFFPROG = "nvim -d";
+
+    NPM_CONFIG_PREFIX = "$HOME/.local/share/npm-global";
   };
 
   home.sessionPath = [
     "$HOME/.local/bin"
     "$HOME/.nix-profile/bin"
     "$XDG_DATA_HOME/cargo/bin"
+    "$XDG_DATA_HOME/npm-global/bin"
   ];
 }
