@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 {
   home.packages = with pkgs; [
     wl-clipboard
@@ -104,7 +104,7 @@
 
         font = {
           name = "JetBrainsMono Nerd Font";
-          size = 10;
+          size = lib.mkDefault 10;
         };
 
         extraConfig = {
