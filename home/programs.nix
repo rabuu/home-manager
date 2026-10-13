@@ -20,6 +20,7 @@
     discord
     signal-desktop
     telegram-desktop
+    threema-desktop
     slack
     chromium
     tor-browser
