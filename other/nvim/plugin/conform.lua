@@ -4,6 +4,14 @@ local conform = require("conform")
 
 conform.setup({
 	formatters_by_ft = {
+		c = {
+			"clang-format",
+			lsp_format = "fallback",
+		},
+		cpp = {
+			"clang-format",
+			lsp_format = "fallback",
+		},
 		rust = {
 			"rustfmt",
 			lsp_format = "fallback",
@@ -29,6 +37,7 @@ conform.setup({
 	},
 	format_on_save = {
 		timeout_ms = 500,
+		lsp_format = "never",
 	},
 })
 
