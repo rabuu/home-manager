@@ -20,6 +20,12 @@ conform.setup({
 			"typstyle",
 			lsp_format = "fallback",
 		},
+		javascript = {
+			"biome-check",
+			"prettier",
+			lsp_format = "fallback",
+			stop_after_first = true,
+		},
 		typescript = {
 			"biome-check",
 			"prettier",
