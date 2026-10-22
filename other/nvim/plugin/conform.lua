@@ -40,6 +40,7 @@ conform.setup({
 			"biome-check",
 			lsp_format = "fallback",
 		},
+		dart = { "dart_format", },
 	},
 	format_on_save = {
 		timeout_ms = 500,
