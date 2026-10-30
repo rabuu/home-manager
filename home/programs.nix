@@ -14,6 +14,7 @@
     tokei
     libreoffice
     gimp
+    inkscape
     vlc
     ffmpeg
     thunderbird
