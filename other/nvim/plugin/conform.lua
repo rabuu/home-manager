@@ -40,11 +40,19 @@ conform.setup({
 			"biome-check",
 			lsp_format = "fallback",
 		},
-		dart = { "dart_format", },
+		dart = { "dart_format" },
+		tptp = { "tptp4x" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
 		lsp_format = "never",
+	},
+	formatters = {
+		tptp4x = {
+			command = "tptp4X",
+			args = { "-ftptp", "--" },
+			stdin = true,
+		},
 	},
 })
 
