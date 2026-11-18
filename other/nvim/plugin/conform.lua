@@ -42,6 +42,7 @@ conform.setup({
 		},
 		dart = { "dart_format" },
 		tptp = { "tptp4x" },
+		prolog = { "swipl_formatter" },
 	},
 	format_on_save = {
 		timeout_ms = 500,
@@ -52,6 +53,11 @@ conform.setup({
 			command = "tptp4X",
 			args = { "-ftptp", "--" },
 			stdin = true,
+		},
+		swipl_formatter = {
+			command = "swipl",
+			args = { "formatter", "$FILENAME" },
+			stdin = false,
 		},
 	},
 })
